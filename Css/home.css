@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*showcase page*/
+
+/*Main heading*/
+#main{
+  color: white;
+  max-width:70vw;
+  max-height:60vh;
+  top:15vh;
+  left:20vw;
+  position: absolute;
+}
+
+/*background image*/
+.showcase{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/bg.png");
+    background-size:cover;
+    position: relative;
+    width: 100vw;
+    height:70vh; 
+}
+
+/*Positioning of search bar*/
+.search{
+    max-height: 0.5vh;
+    max-width: 50vw;
+    position: absolute;
+    top:45vh;
+    left:20vw;
+}
+
+/*Search Button positioning*/
+.btn{
+    position: absolute;
+    top: 0vh;
+    left:50vw;
+}
+
+/*optimizing for larger display*/
+@media (min-width: 750px){
+    .search{
+        width:100vw;
+        left:25vw;
+    }
+    .btn{
+        left: 50vw;
+    }
+    #main{
+        left:37vw;
+        width:100vw;
+        top: 30vh;
+    }
+    .showcase{
+        width: 100%;
+        max-height:70vh; 
+        overflow-x: hidden;
+    }
+}
+
+
+/*Major Cities Page*/
+
+/*Major Cities*/
+.headingcity{
+    position: relative;
+    top: 5vh;
+    left:22vw;
+    overflow-x:hidden;
+}
+
+/*City-selection buttons*/
+.rounded-circle
+{   
+    margin-top:10vh;
+    margin-left: 29vw;
+    border: 50%;
+    padding: 2vw;
+    transition: .5s ease;
+    max-width:45vw;
+    max-height: 30vh;
+    display:flex;
+    overflow-x:hidden;
+}
+
+/*City-selection buttons-animations*/
+.rounded-circle:hover
+{
+  box-shadow: gray 0 0 5px 5px;
+  transition: .5s ease;
+}
+
+/*optimizing for large displays*/
+@media (min-width: 750px){
+
+.rounded-circle{
+    display: inline;
+    margin-left: 5vw;
+}
+    .headingcity{
+        position: relative;
+        top: 10vh;
+        max-width: fit-content;
+        left:42vw;
+        overflow-x:hidden;
+    }
+}
+@media (min-width: 1000px){
+    .search{
+        width:100vw;
+        left:25vw;
+    }
+    .btn{
+        left: 50vw;
+    }
+    #main{
+        left:37vw;
+        width:100vw;
+        top: 30vh;
+    }
+    .showcase{
+        width: 100%;
+        max-height:70vh; 
+        overflow-x: hidden;
+    }
+    .rounded-circle{   
+        margin-left: 7.4vw;
+        border: 50% 2px solid black;
+        padding: 1vw;
+        width:15vw;
+        height: 30vh;
+        display: inline-block;
+        overflow-x:hidden;
+    }
+
+    .headingcity{
+        position: relative;
+        top: 10vh;
+        max-width: fit-content;
+        left:42vw;
+        overflow-x:hidden;
+    }
+}
+#btncreate{
+    position: absolute; 
+    z-index:1000;
+    left: 1.5vw;
+    top:43.5vh;
+    width: 90%; 
+    height: 5vh;
+}
+#btnlogin{
+    position: absolute; 
+    z-index:1000;
+    left: 1vw;
+    top:17vh;
+    width: 90%; 
+    height: 4.5vh;
+}
